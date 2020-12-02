@@ -152,14 +152,9 @@ body {
 }
 
 /* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-
-
-
+.slide-show {
+  margin-bottom: 15px;
+}
   /* The dots/bullets/indicators */
   .dot {
     height: 15px;
