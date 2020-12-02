@@ -3,10 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Version 1.0</title>
     <h2>I'm hosted on github pages.</h2>
 </head>
 <body>
+
+    <!--Navbar-->
+    <nav id="nav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <!--Navbar-->
+
+    <!--Name-->
+    <h1 id="title">
+        Cakes by Miss Maggie
+    </h1>
+    <!--Name-->
+
+    <!--Top container-->
+    <div class="top-container">
+        <div>
+            <h2>
+                Designer Cakes<br>Delivered to Your<br>Door
+            </h2>
+            <button class="button">
+                <span>
+                    Order Here
+                </span>
+            </button>
+            </div>
+        </div>
+    <!--Top container end-->
+
+    <!--Banner-->
+    <div class="banner">
+        <h1>
+            Every cake made is tailored for your celebration.
+        </h1>
+    </div>
+    <!--Banner end-->
+
+    <!--Bottom-container-->
+    <div class="bottom-container">
+        <div class="bottom-container-1">
+            <h2>
+                Custom Cakes in Las Vegas, NV
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam massa erat, eleifend et metus a, fermentum porttitor velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi dignissim dolor leo, ac interdum lectus sollicitudin ut. Morbi tincidunt porta tincidunt. Curabitur semper ultrices nisl, vel lobortis erat eleifend a. In eu tortor ut lorem aliquet facilisis scelerisque id elit. Vivamus efficitur aliquet nibh a tempus.</p>
+        </div>
+        <div class="bottom-container-1">
+          <div>
+            <div class="mySlides fade">
+                <img class="slide-images"  src="images/1.jpg" alt="">
+            </div>
+            <div class="mySlides fade">
+                <img class="slide-images"  src="images/3.jpg" alt="">
+            </div>
+            <div class="mySlides fade">
+                <img class="slide-images"  src="images/1.jpg" alt="">
+            </div>
+          </div>
+          <div>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+    </div>
+    <!--Bottom-container end-->
+
+    <!--footer-->
+    <div class="footer">
+        <div>
+            <button class="contact-button"><span>Contact</span></button>
+            <div class="contact-info">
+                <div>
+                    <h4>E-mail</h4>
+                    <h5>business_email@gmail.com</h5>
+                </div>
+                <div>
+                    <h4>Phone</h4>
+                    <h5>(702)123-1234</h5>
+                </div>
+            </div>
+        </div>
+        <div class="social-icons">
+            <h2>
+                Follow Me
+            </h2>
+            <a href="asdsdfdas">
+            <img src="images/Instagram.png" alt="ig-icon">
+            </a>
+            <a href="asfafds">
+                <img src="images/Facebook.png" alt="fb-icon">
+            </a>
+        </div>
+    </div>
+    <div class="copyright-info">
+        <p>
+            <span>&#169;</span>
+            2020 All Rights Reserved.
+        </p>
+        <p>
+            Designed and Developed by: <span id="author">Eddie Verdusco</span>
+        </p>
+    </div>
+    <!--footer end-->
+
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+        </script>
 
 </body>
 </html>
