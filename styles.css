@@ -206,7 +206,7 @@ background-color: rgb(222, 228, 227);
   }
   }
 
-  @media only screen and (max-width: 1225px) {
+  @media only screen and (max-width: 1475px) {
     .top-container {
       display:flex;
       margin-top:10px;
@@ -272,14 +272,18 @@ background-color: rgb(222, 228, 227);
 /* bottom-container */
 .bottom-container {
     display: flex;
-    justify-content: space-around;
-    margin-top:10rem;
+    justify-content:space-around;
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+
 }
 
 .bottom-container-1 {
+    width: 500px;
     text-align: center;
     font-size: 1.5rem;
-    margin:0px 100px;
+    margin:0px;
     color:rgb(116, 41, 53);
 }
 
@@ -292,14 +296,14 @@ background-color: rgb(222, 228, 227);
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: rgb(161, 161, 161);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
 
   .active {
-    background-color: #717171;
+    background-color: #eb8787;
   }
 
   /* Fading animation */
@@ -322,12 +326,42 @@ background-color: rgb(222, 228, 227);
 
 
   .slide-images {
-    height: 100%;
     object-fit: cover;
-    height: 600px;
-    width: 600px;
+    height: 50vh;
+    width: 100%;
     border-radius: 5px;
 
+  }
+
+  @media only screen and (max-width:1100px ) {
+    .bottom-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+
+  }
+  .bottom-container-1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin:0px;
+    color:rgb(116, 41, 53);
+}
+
+.slide-images {
+  object-fit: cover;
+  height: 80vh;
+  width: 100%;
+  border-radius: 5px;
+
+}
+
+.bottom-container-text {
+
+
+}
   }
 
   /* bottom-container end*/
@@ -340,6 +374,7 @@ background-color: rgb(222, 228, 227);
   justify-content: space-around;
   text-align: center;
 }
+
 
 .contact-button {
   border-radius: 5px;
@@ -360,6 +395,7 @@ background-color: rgb(222, 228, 227);
 .contact-info {
   display: flex;
   margin:5px 0px;
+
 
 }
 .contact-info h4, h5{
@@ -388,10 +424,40 @@ background-color: rgb(222, 228, 227);
   justify-content: space-around;
   background: rgb(68, 12, 24);
   color:white;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 #author {
   color:rgb(195, 7, 63);
+}
+
+@media only screen and (max-width:750px) {
+  .footer {
+    background:rgb(116, 41, 53);
+    color: rgb(209, 209, 209);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer div {
+    align-self: center;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    margin:1px 0px 10px 0px;
+
+
+  }
+
+  .copyright-info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+  }}
 }
 /* footer end*/
