@@ -20,6 +20,7 @@ body {
     background:rgb(116, 41, 53);
 
 }
+
 #nav ul {
     display:flex;
     justify-content: center;
@@ -44,27 +45,88 @@ body {
     transition: 1s;
 
 }
+
+@media only screen and (max-width: 700px) {
+  #nav {
+    position: relative;
+  }
+
+  #nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+#nav li  {
+  margin: 7px 0px 7px 0px;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  border-bottom: solid transparent 3px;
+
+}
+}
 /* Navbar end*/
 
+#mobile-header {
+  margin-top: 0px;
+  margin-bottom: 100px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  color:rgb(116, 41, 53);
+  width: 100%;
+background-color: rgb(222, 228, 227);
+
+
+
+}
+
+@media only screen and (max-width:575px) {
+  #mobile-header {
+    height: 40vh;
+  }
+  #mobile-header h2  {
+    margin-top: 100px;
+  }
+}
+
+
+@media only screen and (min-width:1025px) {
+  #mobile-header {
+    display: none;
+  }
+}
+
+
 #title {
-    position: absolute;
     color:rgb(116, 41, 53);
     text-align: center;
     text-shadow: -3px 1px rgb(0, 0, 0);
     font-size:5rem;
     font-weight: 900;
     font-family: 'Allura', sans-serif;
-    margin:20px 0px 0px 0px;;
-    background-image: url("images/dots.jpg");
-    background-size: 200px 200px;
+    margin:100px 0px 0px 0px;;
     width: 100%;
 
+  }
+
+  @media only screen and (max-width: 700px) {
+    #title {
+      font-size: 4rem;
+      margin: 0;
+      padding-bottom: 10px;
+    }
   }
 
 /* Top-container*/
 .top-container {
     display:flex;
-    margin-top:50px;
+    margin-top:10px;
     justify-content: flex-end;
     background-image: url("images/cake.jpg");
     background-size: cover;
@@ -82,7 +144,7 @@ body {
 
 }
 
-.top-container button {
+.button {
     border-radius: 5px;
     border: none;
     background: rgb(116, 41, 53);
@@ -95,7 +157,7 @@ body {
 
 }
 
-.top-container button span {
+.button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -103,7 +165,7 @@ body {
 
   }
 
-  .top-container button span:after {
+.button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -113,17 +175,81 @@ body {
 
   }
 
-  .top-container button:hover span {
+  .button:hover span {
     padding-right: 25px;
 
   }
 
-  .top-container button:hover span:after {
+  .button:hover span:after {
     opacity: 1;
     right: 0;
 
   }
 
+  @media only screen and (max-width: 1750px) {
+    .top-container div {
+      align-self: flex-start;
+      margin: 150px 75px;
+      color:rgb(116, 41, 53);
+      font-size: 1.5em;
+
+  }
+  }
+
+  @media only screen and (max-width: 1650px) {
+    .top-container div {
+      align-self: flex-start;
+      margin: 150px 75px;
+      color:rgb(116, 41, 53);
+      font-size: 1em;
+
+  }
+  }
+
+  @media only screen and (max-width: 1225px) {
+    .top-container {
+      display:flex;
+      margin-top:10px;
+      justify-content: flex-end;
+      background-image: url("images/cake.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0% 10%;
+      height: 90vh;
+
+  }
+  .top-container div {
+    margin: 0px 50px;
+    color:rgb(116, 41, 53);
+    font-size: 1em;
+
+}
+  }
+
+  @media only screen and (max-width: 1025px) {
+    .top-container {
+      margin-top: 50px;
+    }
+
+    .top-container div {
+      display:none;
+
+    }
+  }
+
+  @media only screen and (max-width:575px) {
+    .top-container {
+      display:flex;
+      margin-top:250px;
+      justify-content: flex-end;
+      background-image: url("images/cake-no-bottom.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0% 1%;
+      height: 100vh;
+
+  }
+  }
 /* Top-container end*/
 
    .banner {
@@ -135,6 +261,12 @@ body {
     width: 100%;
     font-weight: 400;
     text-shadow: -3px 1px rgb(0, 0, 0);
+    }
+
+    @media only screen and (max-width: 1080px) {
+       .banner {
+        font-size: 15px;
+        }
     }
 
 /* bottom-container */
