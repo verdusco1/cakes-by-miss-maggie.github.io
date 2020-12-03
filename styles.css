@@ -74,13 +74,14 @@ body {
 #mobile-header {
   margin-top: 0px;
   margin-bottom: 100px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   font-size: 20px;
-  position: absolute;
+  position: ;
   text-align: center;
   color:rgb(116, 41, 53);
   width: 100%;
-background-color: rgb(222, 228, 227);
+  height: 40bh;
+background-color: r
 
 
 
@@ -88,7 +89,7 @@ background-color: rgb(222, 228, 227);
 
 @media only screen and (max-width:575px) {
   #mobile-header {
-    height: 40vh;
+
   }
   #mobile-header h2  {
     margin-top: 100px;
@@ -120,6 +121,7 @@ background-color: rgb(222, 228, 227);
       font-size: 4rem;
       margin: 0;
       padding-bottom: 10px;
+      padding-top: 50px
     }
   }
 
@@ -459,5 +461,5 @@ background-color: rgb(222, 228, 227);
     justify-content: center;
     font-size: 12px;
   }}
-}
+
 /* footer end*/
