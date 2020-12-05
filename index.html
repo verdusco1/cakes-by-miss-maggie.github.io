@@ -9,6 +9,22 @@
 </head>
 <body>
 
+    <!--Hamburger-->
+    <nav>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    <!--Hamburger end-->
+
     <!--Navbar-->
     <nav id="nav">
         <ul>
@@ -18,7 +34,7 @@
             <li><a href="">Contact</a></li>
         </ul>
     </nav>
-    <!--Navbar-->
+    <!--Navbar end-->
 
     <!--Name-->
     <h1 id="title">
@@ -131,7 +147,6 @@
     <!--footer end-->
 
 
-
     <script>
         var slideIndex = 0;
         showSlides();
@@ -152,6 +167,20 @@
           dots[slideIndex-1].className += " active";
           setTimeout(showSlides, 3000); // Change image every 3 seconds
         }
+        </script>
+
+        <script>
+
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+        link.classList.toggle("fade");
+  });
+});
         </script>
 
 </body>
