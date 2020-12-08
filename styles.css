@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,200&display=swap');
 
 
+
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -10,6 +11,7 @@ body {
   box-sizing: border-box;
   background-image: url("images/dots.jpg");
   background-size: 200px 200px;
+
 }
 
 
@@ -475,6 +477,95 @@ nav {
 }
 
 /* bottom-container end*/
+
+/*grid gallery */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  margin:2rem auto;
+
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem;
+
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+  border: solid 3px white;
+}
+
+.gallery-image:hover {
+  height: px;
+}
+
+.grid-text {
+  color: rgb(116, 41, 53);
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
+  margin:10%;
+
+}
+
+.gallery-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery-item-2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery-item-3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery-item-4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.gallery-item-5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.gallery-item-6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+/*grid gallery end*/
 
 /* footer */
 .footer {
