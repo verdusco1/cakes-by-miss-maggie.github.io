@@ -358,6 +358,27 @@ nav {
   }
 }
 
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+margin-top: 1rem;
+text-align: center;
+
+width: 100%;
+  font-size: 1rem;
+height: 10vh;
+background-color: ;
+margin-bottom: 0;
+padding: 0;
+}
+
+.about-me div {
+  background-color: ;
+  width: 80%;
+}
+
+
 /*grid gallery */
 
 *,
@@ -532,6 +553,7 @@ h5 {
 
 .copyright-info {
   display: flex;
+  padding:3px 0px;
   justify-content: space-around;
   background: rgb(68, 12, 24);
   color: white;
