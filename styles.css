@@ -336,27 +336,24 @@ nav {
 }
 /* Top-container end*/
 
-.banner {
-  text-align: center;
-  font-size: 1.5rem;
-  background: rgb(116, 41, 53);
-  color: rgb(209, 209, 209);
-  margin-top: 0;
-  top: auto;
+.about-me {
+  margin:0 50%;
+  margin-top: 1rem;
+  width: 80vw;
+  transform: translate(-50%);
   display: inline-block;
-  width: 100%;
-  margin-bottom: 0;
-  font-weight: 400;
-  text-shadow: -3px 1px rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  word-break: break-all;
+  color:rgb(49, 49, 49);
 
 }
 
-@media only screen and (max-width: 1080px) {
-  .banner {
-    font-size: 15px;
+.about-me div, p {
 
-  }
+
 }
+
 
 /*grid gallery */
 
@@ -371,7 +368,6 @@ nav {
 .container {
   width: 100%;
   margin:2rem auto;
-
 }
 
 .gallery {
@@ -387,7 +383,7 @@ nav {
   height: 100%;
   object-fit: cover;
   display:block;
-
+  background: rgba(201, 200, 200, 0.795);
 }
 
 .gallery-image:hover {
@@ -398,14 +394,14 @@ nav {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 6;
 }
 
 .gallery-item-2 {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 6;
 }
 
 .gallery-item-3 {
@@ -416,12 +412,12 @@ nav {
 }
 
 .gallery-item-4 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 6;
-}
+  grid-column-start: ;
+  grid-column-end: ;
+  grid-row-start: ;
+  grid-row-end: ;
 
+}
 .gallery-item-5 {
   grid-column-start: 1;
   grid-column-end: 5;
@@ -436,7 +432,13 @@ nav {
   grid-row-end: 9;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1250px) {
+  .gallery-item-4 {
+    display:none;
+  }
+}
+
+@media (max-width: 1250px) {
   .container {
     width: 100%;
     margin:0;
@@ -445,7 +447,7 @@ nav {
     display:flex;
     flex-wrap: wrap;
     grid-gap: 0px;
-    margin:px;
+
   }
 
   .gallery figure{
@@ -457,6 +459,10 @@ nav {
   .gallery-item-1, .gallery-item-2, .gallery-item-3, .gallery-item-4, .gallery-item-5, .gallery-item-6 {
   width: 100%;
   }
+  .grid-item-4 {
+    display:unset;
+  }
+
  }
 
  @media (max-width: 576px) {
@@ -474,6 +480,7 @@ nav {
     border: none;
     border-bottom: solid 2px rgb(241, 237, 237);
   }
+
 
  }
 
@@ -532,6 +539,7 @@ h5 {
 
 .copyright-info {
   display: flex;
+  padding:3px 0px;
   justify-content: space-around;
   background: rgb(68, 12, 24);
   color: white;
