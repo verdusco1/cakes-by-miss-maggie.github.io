@@ -336,6 +336,28 @@ nav {
 }
 /* Top-container end*/
 
+.banner {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: rgb(116, 41, 53);
+  color: rgb(209, 209, 209);
+  top: auto;height: 10vh;
+  font-weight: 400;
+  text-shadow: -3px 1px rgb(0, 0, 0);
+}
+
+.banner h1 {
+  align-self: center;
+}
+
+@media only screen and (max-width: 1080px) {
+  .banner {
+    font-size: 15px;
+
+  }
+}
+
 .about-me {
   margin:0 50%;
   margin-top: 1rem;
