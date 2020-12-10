@@ -242,8 +242,8 @@ nav {
 .button {
   border-radius: 5px;
   border: none;
-  background: rgb(116, 41, 53);
-  color: rgb(241, 237, 237);
+  background:rgb(116, 41, 53) ;
+  color: rgb(219, 219, 219);
   font-size: 24px;
   padding: 10px;
   width: 200px;
@@ -359,21 +359,21 @@ nav {
 }
 
 .about-me {
-  margin:0 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 1rem;
-  width: 80vw;
-  transform: translate(-50%);
-  display: inline-block;
+  width: 100%;
   padding: 10px;
   text-align: center;
   word-break: break-all;
   color:rgb(49, 49, 49);
+  font-size: 16px;
 
 }
 
-.about-me div, p {
-
-
+.about-me-text {
+  margin: 0 5vw;
 }
 
 
