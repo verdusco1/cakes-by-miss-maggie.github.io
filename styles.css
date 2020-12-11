@@ -14,7 +14,21 @@ body {
 
 }
 
+.test {
+  margin-top:3.75rem;
+  display:flex;
+  justify-content: center;
+  background-color: #742935;
+  width: 100%;
 
+}
+
+.test img {
+  height: 200px;
+  width: auto;
+  background-size: cover;
+
+}
 
 /*Hamburger*/
 nav {
@@ -30,11 +44,11 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  width: 50%;
+  width: 40%;
   height: 100%;
   justify-content: space-around;
-  margin-left: auto;
   margin-top:20px;
+  margin-left:auto;
 
 }
 
@@ -121,65 +135,7 @@ nav {
 }
 /*Hamburger*/
 
-/* Navbar */
-#nav {
-  z-index: 1;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  background: rgb(116, 41, 53);
-}
 
-#nav ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  margin: 25px;
-}
-
-#nav li a {
-  margin: 20px;
-  padding: 5px 15px;
-  text-decoration: none;
-  color: rgb(241, 237, 237);
-  font-size: 1rem;
-  border-bottom: solid transparent 3px;
-}
-
-#nav li a:hover {
-  border-bottom: solid rgb(241, 237, 237) 3px;
-  color: pink;
-  transition: 1s;
-}
-
-@media only screen and (max-width: 700px) {
-  #nav {
-    position: relative;
-  }
-
-  #nav ul {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  #nav li {
-    margin: 7px 0px 7px 0px;
-    padding: 0;
-    text-decoration: none;
-    color: rgb(241, 237, 237);
-    font-size: 1rem;
-    border-bottom: solid transparent 3px;
-  }
-}
-
-@media only screen and (max-width: 2000px) {
-  #nav {
-    display:none;
-  }
-}
-/* Navbar end*/
 
 #mobile-header {
   margin-top: 0px;
@@ -222,7 +178,7 @@ nav {
 /* Top-container*/
 .top-container {
   display: flex;
-  margin-top: 10px;
+  margin-top: px;
   justify-content: flex-end;
   background-image: url("images/cake.jpg");
   background-size: cover;
@@ -306,7 +262,7 @@ nav {
     height: 90vh;
   }
   .top-container div {
-    margin: 0px 50px;
+    margin: 100px 50px;
     color: rgb(116, 41, 53);
     font-size: 1em;
   }
@@ -337,23 +293,28 @@ nav {
 /* Top-container end*/
 
 .banner {
-  display: flex;
+  display:flex;
   justify-content: center;
-  font-size: 1.5rem;
+  align-items: center;
   background: rgb(116, 41, 53);
-  color: rgb(209, 209, 209);
-  top: auto;height: 10vh;
-  font-weight: 400;
-  text-shadow: -3px 1px rgb(0, 0, 0);
+  height: 10vh;
+  color: #d4c8c8;
+  text-align: center;
+
+}
+
+.banner div {
+
 }
 
 .banner h1 {
   align-self: center;
+
 }
 
 @media only screen and (max-width: 1080px) {
   .banner {
-    font-size: 15px;
+    font-size: 12px;
 
   }
 }
