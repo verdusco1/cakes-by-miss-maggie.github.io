@@ -14,6 +14,47 @@ body {
 
 }
 
+.intro {
+  z-index: 2;
+  background:rgb(116, 41, 53);
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.intro-text {
+  color:rgb(192, 189, 184);
+  font-size: 3rem;
+}
+
+.slider {
+  z-index: 2;
+  background:rgb(192, 189, 184);
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+
+}
+
+.hide {
+  background: rgb(116, 41, 53);
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translatey(100%);
+  display: inline-block;
+}
+
 .test {
   margin-top:3.75rem;
   display:flex;
@@ -73,7 +114,7 @@ nav {
   .line {
     width: 30px;
     height: 3px;
-    background: rgb(241, 237, 237);
+    background:  rgb(197, 194, 194);
     margin: 5px;
   }
   nav {
@@ -144,9 +185,9 @@ nav {
   font-size: 20px;
   position: absolute;
   text-align: center;
-  color: rgb(116, 41, 53);
+  color:  rgb(221, 203, 203);
   width: 100%;
-  background-color: rgba(207, 207, 207, 0.986);
+  background-color:rgb(116, 41, 53);
 }
 
 @media only screen and (min-width: 1025px) {
@@ -183,7 +224,7 @@ nav {
   background-image: url("images/cake.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0% 10%;
+  background-position: 0% 35%;
   height: 100vh;
 
 }
@@ -298,7 +339,7 @@ nav {
   align-items: center;
   background: rgb(116, 41, 53);
   height: 10vh;
-  color: #d4c8c8;
+  color: rgb(221, 203, 203);
   text-align: center;
 
 }
@@ -323,14 +364,14 @@ nav {
   display:flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin:2rem 0rem;
   width: 100%;
-  padding: 10px;
+  padding: 14px;
   text-align: center;
   word-break: break-all;
-  color:rgb(49, 49, 49);
+  color:rgb(78, 54, 54);
   font-size: 16px;
-
+  background: ;
 }
 
 .about-me-text {
@@ -350,7 +391,7 @@ nav {
 
 .container {
   width: 100%;
-  margin:2rem auto;
+  margin:.5rem auto;
 }
 
 .gallery {
@@ -366,7 +407,12 @@ nav {
   height: 100%;
   object-fit: cover;
   display:block;
-  background: rgba(201, 200, 200, 0.795);
+  border:solid transparent 3px;
+}
+
+.gallery-image:hover {
+  border: solid rgb(195, 7, 63) 3px;
+  transition: ease-in 1s;
 }
 
 .gallery-image:hover {
@@ -525,7 +571,7 @@ h5 {
   padding:3px 0px;
   justify-content: space-around;
   background: rgb(68, 12, 24);
-  color: white;
+  color: rgba(180, 180, 180, 0.664);
   font-size: 12px;
 }
 
@@ -536,7 +582,7 @@ h5 {
 @media only screen and (max-width: 750px) {
   .footer {
     background: rgb(116, 41, 53);
-    color: rgb(209, 209, 209);
+    color: rgb(160, 157, 157);
     display: flex;
     flex-direction: column;
     text-align: center;

@@ -31,6 +31,21 @@
 
 
 
+    <div class="intro">
+        <div class="intro-text">
+          <h1 class="hide">
+            <span class="text">Custom cakes for</span>
+          </h1>
+          <h1 class="hide">
+            <span class="text">any celebration.</span>
+          </h1>
+          <h1 class="hide">
+            <span class="text"></span>
+          </h1>
+        </div>
+      </div>
+      <div class="slider"></div>
+
     <!--Header and order button for mobile-->
     <div id="mobile-header">
         <h2>
@@ -69,15 +84,6 @@
     </div>
     <!--Banner end-->
 
-    <div class="about-me">
-        <div class="about-me-text">
-        <h2>
-            Custom Cakes in Las Vegas, NV
-        </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam massa erat, eleifend et metus a, fermentum porttitor velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi dignissim dolor leo, ac interdum lectus sollicitudin ut. Morbi tincidunt porta tincidunt. Curabitur semper ultrices nisl, vel lobortis erat eleifend a. In eu tortor ut lorem aliquet facilisis scelerisque id elit. Vivamus efficitur aliquet nibh a tempus.</p>
-        </div>
-    </div>
-
     <!--Grid contaiener -->
     <div class="container">
         <div class="gallery">
@@ -102,6 +108,15 @@
         </div>
     </div>
     <!--Grid contaiener end -->
+
+    <div class="about-me">
+        <div class="about-me-text">
+        <h2>
+            Custom Cakes in Las Vegas, NV
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam massa erat, eleifend et metus a, fermentum porttitor velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi dignissim dolor leo, ac interdum lectus sollicitudin ut. Morbi tincidunt porta tincidunt. Curabitur semper ultrices nisl, vel lobortis erat eleifend a. In eu tortor ut lorem aliquet facilisis scelerisque id elit. Vivamus efficitur aliquet nibh a tempus.</p>
+        </div>
+    </div>
 
     <!--footer-->
     <div class="footer">
@@ -178,6 +193,18 @@
 });
         </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+        <script>
+            const tl = gsap.timeline({ defaults: {ease: "power1.out"}});
+            tl.to(".text", {y: "0%", duration: 1, stagger: 0.25});
+            tl.to(".slider", {y: "-100%", duration: 1.5, delay: 0.5});
+            tl.to(".intro", {y: "-100%", duration: 1}, "-=1");
+            tl.fromTo(".test img" , {opacity:0}, {opacity:1, duration:1});
+
+
+
+        </script>
 
 </body>
 </html>
