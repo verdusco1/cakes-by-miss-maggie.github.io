@@ -55,20 +55,26 @@ body {
   display: inline-block;
 }
 
-.test {
-  margin-top:3.75rem;
-  display:flex;
-  justify-content: center;
-  background-color: #742935;
+.logo {
   width: 100%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(116, 41, 53);
 }
 
-.test img {
-  height: 200px;
-  width: auto;
-  background-size: cover;
+.logo-container {
+  width: 400px;
+  height: auto;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:60px;
+}
 
+.logo-container img {
+  width: 100%;
 }
 
 /*Hamburger*/
@@ -83,6 +89,7 @@ nav {
 }
 
 .nav-links {
+
   display: flex;
   list-style: none;
   width: 40%;
@@ -94,7 +101,7 @@ nav {
 }
 
 .nav-links li a {
-  color: rgb(231, 231, 231);
+  color: rgb(221, 203, 203);
   text-decoration: none;
   font-size: 16px;
   padding:0px 10px 5px 10px;
@@ -103,7 +110,7 @@ nav {
 }
 
 .nav-links li a:hover {
-  border-bottom: solid rgb(231, 231, 231) 3px;
+  border-bottom: solid rgb(221, 203, 203) 3px;
   color: pink;
   transition: 1s;
 }
@@ -180,17 +187,28 @@ nav {
 
 #mobile-header {
   margin-top: 0px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+
+  padding-bottom: 7px;
   font-size: 20px;
   position: absolute;
   text-align: center;
   color:  rgb(221, 203, 203);
   width: 100%;
-  background-color:rgb(116, 41, 53);
+  color: rgb(116, 41, 53);
+  background: rgb(199, 195, 195);
 }
 
-@media only screen and (min-width: 1025px) {
+#mobile-header h2 {
+  background: ;
+  padding-top: 5px;
+}
+
+#mobile-header button {
+  margin-top: 5px;
+
+}
+
+@media only screen and (min-width: 1240px) {
   #mobile-header {
     display: none;
   }
@@ -224,23 +242,24 @@ nav {
   background-image: url("images/cake.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0% 35%;
+  background-position: 0% 20%;
   height: 100vh;
 
 }
 
 .top-container div {
   align-self: flex-start;
-  margin: 150px 25px;
+  margin: 5%;
   color: rgb(116, 41, 53);
-  font-size: 2em;
+  font-size: 1rem;
 }
 
 .button {
+
   border-radius: 5px;
   border: none;
   background:rgb(116, 41, 53) ;
-  color: rgb(219, 219, 219);
+  color: rgb(221, 203, 203);
   font-size: 24px;
   padding: 10px;
   width: 200px;
@@ -273,50 +292,10 @@ nav {
   right: 0;
 }
 
-@media only screen and (max-width: 1750px) {
-  .top-container div {
-    align-self: flex-start;
-    margin: 150px 75px;
-    color: rgb(116, 41, 53);
-    font-size: 1.5em;
-  }
+@media only screen and (max-width: 1240px) {
+.top-container div {
+  display: none;
 }
-
-@media only screen and (max-width: 1650px) {
-  .top-container div {
-    align-self: flex-start;
-    margin: 150px 75px;
-    color: rgb(116, 41, 53);
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 1475px) {
-  .top-container {
-    display: flex;
-    margin-top: 10px;
-    justify-content: flex-end;
-    background-image: url("images/cake.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0% 10%;
-    height: 90vh;
-  }
-  .top-container div {
-    margin: 100px 50px;
-    color: rgb(116, 41, 53);
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 1025px) {
-  .top-container {
-    margin-top: 50px;
-  }
-
-  .top-container div {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -327,7 +306,7 @@ nav {
     background-image: url("images/cake-no-bottom.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0% 1%;
+    background-position: 0% 15%;
     height: 100vh;
   }
 }
@@ -482,11 +461,15 @@ nav {
 
 .modal p {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
-  bottom: 5%;
+  bottom: 3%;
   left: 50%;
-  transform: translate(-50%, -5%);
+  transform: translate(-50%, -3%);
+}
+
+.caption {
+  margin-top: 500px;
 }
 
 .full-img {
