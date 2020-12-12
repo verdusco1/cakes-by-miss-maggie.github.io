@@ -71,10 +71,12 @@ body {
   align-items: center;
   justify-content: center;
   margin-top:60px;
+  background-size: cover;
 }
 
 .logo-container img {
   width: 100%;
+  background-size: cover;
 }
 
 /*Hamburger*/
@@ -339,23 +341,7 @@ nav {
   }
 }
 
-.about-me {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin:2rem 0rem;
-  width: 100%;
-  padding: 14px;
-  text-align: center;
-  word-break: break-all;
-  color:rgb(78, 54, 54);
-  font-size: 16px;
-  background: ;
-}
 
-.about-me-text {
-  margin: 0 5vw;
-}
 
 
 /*grid gallery */
@@ -550,6 +536,7 @@ nav {
   .gallery {
     display:block;
     margin: 10px 0px;
+    margin-bottom: 0;
   }
 
   .gallery figure{
@@ -563,7 +550,65 @@ nav {
 
 /*grid gallery end*/
 
+.about-me {
+  background: rgba(201, 123, 123, 0.473);
+  color: rgb(53, 53, 53);
+  display: flex;
+  flex-direction: row-reverse;
+  height: auto;
+  margin-bottom: 8px;
 
+
+}
+
+.about-me-text {
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.about-me-text div {
+  margin: 0 20%;
+}
+
+
+
+.img-container {
+  height: auto;
+}
+
+.img-container img {
+height: 100%;
+width: 100%;
+background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-me {
+    background: rgba(201, 123, 123, 0.596);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    margin: 0px 0px;
+    padding: 15px 0px;
+    width: ;
+
+  }
+
+  .img-container {
+    height: auto;
+    width: 40%;
+  }
+
+  .about-me-text div {
+    margin: 1% 5%;
+  }
+
+}
 
 /* footer */
 .footer {
