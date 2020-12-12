@@ -88,28 +88,28 @@
     <div class="container">
         <div class="gallery">
             <figure class="gallery-image gallery-item-1">
-                <img src="https://picsum.photos/1501/2001" class="gallery-image" alt="image">
+                <img src="/images/1.jpg" class="gallery-image" alt="image 1" data-original="/images/1.jpg">
             </figure>
             <figure class="gallery-image gallery-item-2">
-                <img src="https://picsum.photos/1501/2002" class="gallery-image" alt="image">
+                <img src="/images/3.jpg" class="gallery-image" alt="image  2" data-original="/images/3.jpg">
             </figure>
             <figure class="gallery-image gallery-item-3">
-                <img src="https://picsum.photos/1501/2003" class="gallery-image" alt="image">
+                <img src="/images/2.jpg" class="gallery-image" alt="image  3" data-original="/images/2.jpg">
             </figure>
             <figure class="gallery-image gallery-item-4">
-                <img src="https://picsum.photos/1503/2004" class="gallery-image" alt="image">
+                <img src="https://picsum.photos/1503/2004" class="gallery-image" alt="image 4" data-original="https://picsum.photos/1501/2004">
             </figure>
             <figure class="gallery-image gallery-item-5">
-                <img src="https://picsum.photos/1504/2005" class="gallery-image" alt="image">
+                <img src="https://picsum.photos/1504/2005" class="gallery-image" alt="image 5" data-original="https://picsum.photos/1501/2005">
             </figure>
             <figure class="gallery-image gallery-item-6">
-                <img src="https://picsum.photos/1505/2006" class="gallery-image" alt="image">
+                <img src="https://picsum.photos/1505/2006" class="gallery-image" alt="image 6" data-original="https://picsum.photos/1501/2006">
             </figure>
         </div>
     </div>
     <div class="modal">
-        <img src="images/2.jpg" alt="" class="full-img">
-        <p class="caption">textextex</p>
+        <img src="" alt="" class="full-img">
+        <p class="caption"></p>
     </div>
     <!--Grid contaiener end -->
 
@@ -211,16 +211,30 @@
         </script>
 
         <script>
-            const model = document.querySelector('.modal');
-            const previews = document.querySelectorAll('.container img');
-            const original = document.querySelector('.full-img');
-            const imgText = document.querySelector('.caption');
+         const modal = document.querySelector(".modal");
+const previews = document.querySelectorAll(".gallery img");
+const original = document.querySelector(".full-img");
+const caption = document.querySelector(".caption");
 
-            previews.forEach((preview) => {
-                preview.addEventListener('click', () => {
-                    modal.classList.add("open");
-                });
-            });
+previews.forEach((preview) => {
+    preview.addEventListener('click', () => {
+        modal.classList.add("open");
+        original.classList.add("open");
+
+        const originalSrc = preview.getAttribute("data-original");
+        original.src = `${originalSrc}`;
+        const altText = preview.alt;
+        caption.textContent = altText;
+
+    })
+})
+
+
+modal.addEventListener('click', (e) => {
+    if (e.target.classList.contains("modal")) {
+        modal.classList.remove("open");
+        original.classList.remove("open");
+ }})
         </script>
 
 </body>

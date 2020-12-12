@@ -491,8 +491,9 @@ nav {
 
 .full-img {
   position: absolute;
-  height: 70%;
-  top:50%;
+  height: 80%;
+  width: auto;
+  top:-30%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.5);
   transition: all 0.25s ease-out;
@@ -503,6 +504,7 @@ nav {
   transform: translate(-50%, 50%) scale(1);
 }
 
+/* delete for incorrect photo display on full-img*/
 @media (min-width: 1250px) {
   .gallery-item-4 {
     display:none;
