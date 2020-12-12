@@ -376,7 +376,7 @@ nav {
 .gallery {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
+  grid-template-rows: repeat(14, 5vw);
   grid-gap: .5rem;
 
 }
@@ -422,24 +422,50 @@ nav {
 }
 
 .gallery-item-4 {
-  grid-column-start: ;
-  grid-column-end: ;
-  grid-row-start: ;
-  grid-row-end: ;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start:6 ;
+  grid-row-end: 10;
 
 }
 .gallery-item-5 {
-  grid-column-start: 1;
+  grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 6;
-  grid-row-end: 9;
+  grid-row-end: 10;
 }
 
 .gallery-item-6 {
   grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+
+.gallery-item-7 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 10;
+  grid-row-end: 15;
+}
+.gallery-item-8 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 10;
+  grid-row-end: 15;
+}
+.gallery-item-9 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 10;
+  grid-row-end: 15;
+}
+
+.gallery-item-10 {
+  grid-column-start: 7;
   grid-column-end: 9;
   grid-row-start: 6;
-  grid-row-end: 9;
+  grid-row-end: 10;
 }
 
 .modal {
@@ -487,12 +513,7 @@ nav {
   transform: translate(-50%, 50%) scale(1);
 }
 
-/* delete for incorrect photo display on full-img*/
-@media (min-width: 1250px) {
-  .gallery-item-4 {
-    display:none;
-  }
-}
+
 
 @media (max-width: 1250px) {
   .container {
@@ -503,21 +524,21 @@ nav {
     display:flex;
     flex-wrap: wrap;
     grid-gap: 0px;
+    height: ;
 
   }
 
   .gallery figure{
     flex: 0 50%;
+    height: 60vh;
     border: solid 2px rgb(241, 237, 237);
     box-sizing: border-box;
   }
 
-  .gallery-item-1, .gallery-item-2, .gallery-item-3, .gallery-item-4, .gallery-item-5, .gallery-item-6 {
+  .gallery-item-1, .gallery-item-2, .gallery-item-3, .gallery-item-4, .gallery-item-5, .gallery-item-6,.gallery-item-7, .gallery-item-8, .gallery-item-9, .gallery-item-10 {
   width: 100%;
   }
-  .grid-item-4 {
-    display:unset;
-  }
+
 
  }
 
@@ -541,6 +562,8 @@ nav {
  }
 
 /*grid gallery end*/
+
+
 
 /* footer */
 .footer {
