@@ -276,14 +276,16 @@ nav {
   cursor: pointer;
 }
 
-.button span {
+.button a {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  text-decoration: none;
+  color: rgb(221, 203, 203) ;
 }
 
-.button span:after {
+.button a:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -292,11 +294,11 @@ nav {
   transition: 0.5s;
 }
 
-.button:hover span {
+.button:hover a {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.button:hover a:after {
   opacity: 1;
   right: 0;
 }
@@ -636,6 +638,11 @@ background-size: cover;
   transition: all 0.5s;
   cursor: pointer;
   margin: 10px 0px;
+}
+
+.contact-button a {
+  text-decoration: none;
+  color:  rgb(116, 41, 53);
 }
 
 .contact-button:hover {
