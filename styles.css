@@ -624,6 +624,7 @@ background-size: cover;
   display: flex;
   justify-content: space-around;
   text-align: center;
+
 }
 
 .contact-button {
@@ -675,6 +676,7 @@ h5 {
   background: rgb(68, 12, 24);
   color: rgba(180, 180, 180, 0.664);
   font-size: 12px;
+
 }
 
 #author {
@@ -683,6 +685,7 @@ h5 {
 
 @media only screen and (max-width: 750px) {
   .footer {
+
     background: rgb(116, 41, 53);
     color: rgb(160, 157, 157);
     display: flex;
