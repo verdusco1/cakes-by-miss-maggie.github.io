@@ -67,28 +67,28 @@
   <form action="/pets" method="post" id="form">
     <div class="style">
       <label for="name">Name</label>
-      <input type="text" id="name" name="pet_name">
+      <input type="text" id="name" name="name">
     </div>
     <div class="style">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </div>
+    <div class="style">
       <label for="type">Type</label>
-      <select name="pet_type" id="type">
-        <option value="cat">Cat</option>
-        <option value="dog">Dog</option>
-        <option value="hamster">Hamster</option>
-        <option value="other">Other</option>
-        <option value="zebra">Zebra</option>
+      <select name="order-type" id="type">
+        <option value="cake">Cake</option>
+        <option value="cupcakes">Cupcakes</option>
+        <option value="cakepops">Cakepops</option>
+        <option value="breakable">Breakable Chocolate Hearts</option>
+        <option value="custom">Custom</option>
       </select>
     </div>
     <div class="style">
-      <label for="biography">Biography</label>
-      <textarea name="pet_bio" id="bio" cols="30" rows="3"></textarea>
-    </div>
-    <div class="style">
-      <label for="owners-email">Owner's Email</label>
-      <input type="email" id="owner-email" name="pet_owner-email">
+      <label for="comments">Comments</label>
+      <textarea name="comments" id="comments" cols="30" rows="3"></textarea>
     </div>
     <div class="buttons">
-      <button type="submit" id="new-pet-submit-button">Create new pet</button>
+      <button type="submit" id="submit-button">Submit</button>
     </div>
       <div class="buttons">
     <button type="reset">Reset</button>
