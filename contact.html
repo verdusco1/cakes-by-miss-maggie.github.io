@@ -48,23 +48,9 @@
 
       <div><h1>Contact</h1></div>
 
-    <!--Header and order button for mobile-->
-    <div id="mobile-header">
-        <h2>
-            Designer Cakes Delivered to Your Door
-        </h2>
-        <button class="button">
-            <span>
-                Order Here
-            </span>
-        </button>
-        </div>
-    <!--Header and order button for mobile-->
-
-
   <!-- Start Form -->
   <div class="form-container">
-  <form action="/pets" method="post" id="form">
+  <form action="form.php" method="POST" id="form">
     <div class="style">
       <label for="name">Name</label>
       <input type="text" id="name" name="name">
@@ -73,6 +59,7 @@
         <label for="email">Email</label>
         <input type="email" id="email" name="email">
       </div>
+      <input type="text" name="subject" placeholder="Subject">
     <div class="style">
       <label for="type">Type</label>
       <select name="order-type" id="type">
@@ -84,11 +71,11 @@
       </select>
     </div>
     <div class="style">
-      <label for="comments">Comments</label>
-      <textarea name="comments" id="comments" cols="30" rows="3"></textarea>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" cols="30" rows="3"></textarea>
     </div>
     <div class="buttons">
-      <button type="submit" id="submit-button">Submit</button>
+      <button type="submit" name="submit" id="submit-button">Submit</button>
     </div>
       <div class="buttons">
     <button type="reset">Reset</button>
@@ -135,6 +122,8 @@
         </p>
     </div>
     <!--footer end-->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
 
     <script>
