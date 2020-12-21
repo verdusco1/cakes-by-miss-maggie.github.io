@@ -43,6 +43,21 @@ body
     }
 }
 
+@media screen and (max-width: 600px) {
+    .container div {
+       width: 90%;
+       height: 30vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container div {
+       width: 90%;
+       height: 35vh;
+    }
+}
+
+
 .button {
 
 }
