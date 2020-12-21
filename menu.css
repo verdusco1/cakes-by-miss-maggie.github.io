@@ -4,10 +4,27 @@ body
     padding: none;
 }
 
-.form-container {
-    background: blue;
+#header {
+    font-size: 1.25rem;
+    margin-top:1rem;
+    text-align: center;
+    color: rgb(53, 53, 53);
 }
-#form {
-    width: 80%;
-    background: red;
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container div {
+    color: rgb(53, 53, 53);
+    border-radius: 5px ;
+    padding: 1rem;
+    height: 20vh;
+    background: rgba(201, 123, 123, 0.473);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin: 2rem 1rem;
+    width: 40%;
 }
