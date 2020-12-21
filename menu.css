@@ -4,7 +4,15 @@ body
     padding: none;
 }
 
+.button-container {
+    margin:1rem 0rem;
+    display:flex;
+    justify-content: center;
+    align-self: center;
+}
+
 #header {
+    padding:.5rem 0rem;
     font-size: 1.25rem;
     margin-top:1rem;
     text-align: center;
@@ -20,11 +28,25 @@ body
 
 .container div {
     color: rgb(53, 53, 53);
+    font-size: 1.25rem;
     border-radius: 5px ;
     padding: 1rem;
     height: 20vh;
-    background: rgba(201, 123, 123, 0.473);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background: rgba(224, 161, 161, 0.411);
     margin: 2rem 1rem;
     width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+    .container div {
+       width: 90%;
+    }
+}
+
+.button {
+
+}
+
+.button:hover {
+    transform: scale(1.10);
 }
