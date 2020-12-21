@@ -3,3 +3,11 @@ body
     margin: none;
     padding: none;
 }
+
+.form-container {
+    background: blue;
+}
+#form {
+    width: 80%;
+    background: red;
+}

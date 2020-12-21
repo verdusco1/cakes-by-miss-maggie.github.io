@@ -190,6 +190,12 @@ nav {
     opacity: 1;
   }
 }
+
+.nav-links .current {
+  border-bottom: solid rgb(221, 203, 203) 3px;
+  color: pink;
+  transition: 1s;
+}
 /*Hamburger*/
 
 
@@ -365,7 +371,7 @@ nav {
 
 .container {
   width: 100%;
-  margin:.5rem auto;
+  margin:1rem auto;
 }
 
 .gallery {
