@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Cakes by Miss Maggie | Cakes, cupcakes, and more - Las Vegas, NV</title>
+</head>
+<body>
+
+    <!--Hamburger-->
+    <nav id="navbar">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html#gallery-link">Gallery</a></li>
+            <li><a class="current" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    <!--Hamburger end-->
+
+    <div class="logo">
+    <div class="logo-container">
+        <img src="./images/logo-burgandy.png" alt="Cakes by Miss Maggie Logo">
+    </div>
+</div>
+
+    <div class="intro">
+        <div class="intro-text">
+          <h1 class="hide">
+            <span class="text">Custom cakes for</span>
+          </h1>
+          <h1 class="hide">
+            <span class="text">any celebration.</span>
+          </h1>
+          <h1 class="hide">
+            <span class="text"></span>
+          </h1>
+        </div>
+      </div>
+      <div class="slider"></div>
+
+  <!-- Start Form -->
+<div class="sent-message">
+  <h2>
+    Thank you!<br/>
+    Your message has been sent.
+  </h2>
+</div>
+    <!-- End Form -->
+
+
+
+
+
+    <!--footer-->
+    <div class="footer">
+        <div>
+            <button class="contact-button"><span>Contact</span></button>
+            <div class="contact-info">
+                <div>
+                    <h4>E-mail</h4>
+                    <h5>business_email@gmail.com</h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="social-icons">
+            <h2>
+                Follow Me
+            </h2>
+            <a href="https://www.instagram.com/cakesbymissmaggie/" target="_blank">
+            <img src="images/Instagram.png" alt="ig-icon">
+            </a>
+
+        </div>
+    </div>
+    <div class="copyright-info">
+        <p>
+            <span>&#169;</span>
+            2020 All Rights Reserved.
+        </p>
+        <p>
+            Designed and Developed by: <span id="author">Eddie Verdusco</span>
+        </p>
+    </div>
+    <!--footer end-->
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+        </script>
+
+        <script>
+
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+        link.classList.toggle("fade");
+  });
+});
+        </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+        <script>
+            const tl = gsap.timeline({ defaults: {ease: "power1.out"}});
+            tl.to(".text", {y: "0%", duration: 1, stagger: 0.25});
+            tl.to(".slider", {y: "-100%", duration: 1.5, delay: 0.5});
+            tl.to(".intro", {y: "-100%", duration: 1}, "-=1");
+            tl.fromTo(".test img" , {opacity:0}, {opacity:1, duration:1});
+
+
+
+        </script>
+
+        <script>
+         const modal = document.querySelector(".modal");
+const previews = document.querySelectorAll(".gallery img");
+const original = document.querySelector(".full-img");
+const caption = document.querySelector(".caption");
+
+previews.forEach((preview) => {
+    preview.addEventListener('click', () => {
+        modal.classList.add("open");
+        original.classList.add("open");
+
+        const originalSrc = preview.getAttribute("data-original");
+        original.src = `${originalSrc}`;
+        const altText = preview.alt;
+        caption.textContent = altText;
+
+    })
+})
+
+
+modal.addEventListener('click', (e) => {
+    if (e.target.classList.contains("modal")) {
+        modal.classList.remove("open");
+        original.classList.remove("open");
+ }})
+        </script>
+
+</body>
+</html>
