@@ -52,7 +52,7 @@
 
   <div class="content">
   <div class="form-container">
-  <form action="form.php" method="post" id="form">
+  <form action="contactform.php" method="post" id="form">
     <div class="style">
       <label for="name">Name</label><br/>
       <input type="text" id="name" name="name">
