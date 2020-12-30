@@ -19,49 +19,47 @@ body
     color: rgb(53, 53, 53);
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.text {
+    font-size: 5rem;
 }
 
-.container div {
-    color: rgb(53, 53, 53);
-    font-size: 1.25rem;
-    border-radius: 5px ;
-    padding: 1rem;
-    height: 20vh;
-    background: rgba(224, 161, 161, 0.411);
-    margin: 2rem 1rem;
-    width: 40%;
+/* */
+
+
+
+.container  {
+
 }
 
-@media screen and (max-width: 1000px) {
-    .container div {
-       width: 90%;
-    }
+.row div {
+    border-radius: 5px;
+    margin: 10px 10px;
+    padding-top: 20px;
+    background: rgba(201, 123, 123, 0.473);
 }
 
-@media screen and (max-width: 600px) {
-    .container div {
-       width: 90%;
-       height: 30vh;
-    }
+.container img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
-
-@media screen and (max-width: 400px) {
-    .container div {
-       width: 90%;
-       height: 35vh;
-    }
-}
+/* */
 
 
 .button {
 
 }
 
+.button a:hover {
+    color: rgb(221, 203, 203);
+    text-decoration: none;
+    outline: none;
+}
+
+
+
 .button:hover {
     transform: scale(1.10);
+
 }
