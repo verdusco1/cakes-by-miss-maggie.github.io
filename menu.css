@@ -2,6 +2,7 @@ body
 {
     margin: none;
     padding: none;
+    box-sizing: border-box;
 }
 
 .button-container {
@@ -23,13 +24,31 @@ body
     font-size: 5rem;
 }
 
-/* */
+@media screen and (max-width:768px) {
+    .text {
+        font-size: 2.75rem;
+    }
+}
+
+.tester {
+    display:flex;
+    justify-content: center;
+    margin:3rem 0rem;
+}
+
+.container {
 
 
 
-.container  {
 
 }
+
+.row {
+
+
+}
+
+
 
 .row div {
     border-radius: 5px;
@@ -38,13 +57,22 @@ body
     background: rgba(201, 123, 123, 0.473);
 }
 
+@media screen and (max-width:768px) {
+    .row div {
+        border-radius: 5px;
+        margin: 10px 0px;
+        padding-top: 20px;
+        background: rgba(201, 123, 123, 0.473);
+    }
+}
+
 .container img {
     height: auto;
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
-/* */
+
 
 
 .button {
@@ -65,7 +93,7 @@ body
 }
 
 
-/* test */
+
 .test {
     display:flex;
     justify-content: center;
@@ -92,6 +120,32 @@ body
 
 
 .test img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+.container-row {
+    display:flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.container-row div {
+    margin:10px;
+    padding:15px;
+    background: rgba(201, 123, 123, 0.473);
+    border-radius: 5px;
+}
+
+.container img {
     width: 100%;
     height: auto;
     object-fit: cover;
