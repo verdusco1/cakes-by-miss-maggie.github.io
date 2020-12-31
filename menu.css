@@ -63,3 +63,37 @@ body
     transform: scale(1.10);
 
 }
+
+
+/* test */
+.test {
+    display:flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+
+}
+
+.test-row {
+    height: ;
+    display:flex;
+    justify-content: center;
+    width: 70%;
+
+
+}
+
+.test-row div {
+    margin:10px;
+    padding:15px;
+    background: rgba(201, 123, 123, 0.473);
+    border-radius: 5px;
+}
+
+
+
+.test img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
