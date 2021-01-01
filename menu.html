@@ -91,6 +91,32 @@
   </div>
     <!-- container -->
 
+
+  <div class="menu-container">
+    <div class="menu-row">
+      <div class="col">
+        <img src="./images/4.jpg" alt="cake">
+        <h2>Cakes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut leo metus. Cras faucibus molestie tellus, id suscipit turpis convallis sit amet. </p>
+      </div>
+      <div class="col" >
+        <img src="./images/14.jpg" alt="chocolate hearts">
+        <h2>Breakable Chocolate Hearts</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut leo metus. Cras faucibus molestie tellus, id suscipit turpis convallis sit amet. </p>
+      </div>
+      <div class="col" >
+        <img src="./images/2.jpg" alt="cupcakes">
+        <h2>Cupcakes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut leo metus. Cras faucibus molestie tellus, id suscipit turpis convallis sit amet. </p>
+      </div>
+      <div class="col" >
+        <img src="./images/13.jpg" alt="cakepops">
+        <h2>Cakepops</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut leo metus. Cras faucibus molestie tellus, id suscipit turpis convallis sit amet. </p>
+      </div>
+  </div>
+  </div>
+
     <!--footer-->
     <div class="footer">
         <div>
@@ -125,30 +151,9 @@
     <!--footer end-->
 
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
 
-        function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 3000); // Change image every 3 seconds
-        }
-        </script>
-
+    <!--nav-->
         <script>
-
         const hamburger = document.querySelector(".hamburger");
         const navLinks = document.querySelector(".nav-links");
         const links = document.querySelectorAll(".nav-links li");
@@ -157,149 +162,24 @@
         navLinks.classList.toggle("open");
         links.forEach(link => {
         link.classList.toggle("fade");
-  });
-});
+        });
+        });
         </script>
+    <!--nav-->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+        <!--loading slide-->
         <script>
             const tl = gsap.timeline({ defaults: {ease: "power1.out"}});
             tl.to(".text", {y: "0%", duration: 1, stagger: 0.25});
             tl.to(".slider", {y: "-100%", duration: 1.5, delay: 0.5});
             tl.to(".intro", {y: "-100%", duration: 1}, "-=1");
             tl.fromTo(".test img" , {opacity:0}, {opacity:1, duration:1});
-
-
-
         </script>
+      <!--loading slide-->
 
-        <script>
-         const modal = document.querySelector(".modal");
-const previews = document.querySelectorAll(".gallery img");
-const original = document.querySelector(".full-img");
-const caption = document.querySelector(".caption");
-
-previews.forEach((preview) => {
-    preview.addEventListener('click', () => {
-        modal.classList.add("open");
-        original.classList.add("open");
-
-        const originalSrc = preview.getAttribute("data-original");
-        original.src = `${originalSrc}`;
-        const altText = preview.alt;
-        caption.textContent = altText;
-
-    })
-})
-
-
-modal.addEventListener('click', (e) => {
-    if (e.target.classList.contains("modal")) {
-        modal.classList.remove("open");
-        original.classList.remove("open");
- }})
-        </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-  var slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
-  }
-  </script>
-
-  <script>
-
-  const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.querySelector(".nav-links");
-  const links = document.querySelectorAll(".nav-links li");
-
-  hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-  links.forEach(link => {
-  link.classList.toggle("fade");
-});
-});
-  </script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
-
-  <script>
-      const tl = gsap.timeline({ defaults: {ease: "power1.out"}});
-      tl.to(".text", {y: "0%", duration: 1, stagger: 0.25});
-      tl.to(".slider", {y: "-100%", duration: 1.5, delay: 0.5});
-      tl.to(".intro", {y: "-100%", duration: 1}, "-=1");
-      tl.fromTo(".test img" , {opacity:0}, {opacity:1, duration:1});
-
-
-
-  </script>
-
-  <script>
-   const modal = document.querySelector(".modal");
-const previews = document.querySelectorAll(".gallery img");
-const original = document.querySelector(".full-img");
-const caption = document.querySelector(".caption");
-
-previews.forEach((preview) => {
-preview.addEventListener('click', () => {
-  modal.classList.add("open");
-  original.classList.add("open");
-
-  const originalSrc = preview.getAttribute("data-original");
-  original.src = `${originalSrc}`;
-  const altText = preview.alt;
-  caption.textContent = altText;
-
-})
-})
-
-
-modal.addEventListener('click', (e) => {
-if (e.target.classList.contains("modal")) {
-  modal.classList.remove("open");
-  original.classList.remove("open");
-}})
-  </script>
-
-
-
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>

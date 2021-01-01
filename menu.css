@@ -151,3 +151,61 @@ body
     object-fit: cover;
     border-radius: 5px;
 }
+
+
+
+/* menu container */
+
+.menu-container {
+    margin: 3rem 0rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-row {
+    display:flex;
+    width: 90%;
+
+}
+
+.col {
+    flex-grow: 1;
+    margin: 0px 10px;
+    padding:15px;
+    background: rgba(201, 123, 123, 0.473);
+    border-radius: 5px;
+
+}
+
+
+.menu-row img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 968px) {
+    .menu-row {
+        display:block;
+    }
+
+    .menu-row img {
+        height: 60vh;
+    }
+
+    .col {
+        margin: 15px 0px;
+        padding:15px;
+        background: rgba(201, 123, 123, 0.473);
+        border-radius: 5px;
+
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .menu-row {
+        width: 100%;
+    }
+}

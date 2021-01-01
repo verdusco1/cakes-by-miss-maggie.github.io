@@ -98,7 +98,6 @@ nav {
 }
 
 .nav-links {
-
   display: flex;
   list-style: none;
   width: 40%;
@@ -116,12 +115,14 @@ nav {
   padding:0px 10px 5px 10px;
   border-bottom: 3px solid transparent;
 
+
 }
 
 .nav-links li a:hover {
   border-bottom: solid rgb(221, 203, 203) 3px;
   color: pink;
   transition: 1s;
+
 }
 
 
